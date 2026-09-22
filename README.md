@@ -1,6 +1,6 @@
 # Guía: login con Google OAuth 2.0, PDO y PHP
 
-Proyecto educativo independiente que muestra cómo autenticar usuarios mediante Google, guardar su perfil en MySQL con PDO y mantener una sesión PHP segura.
+Proyecto independiente que muestra cómo autenticar usuarios mediante Google, guardar su perfil en MySQL con PDO y mantener una sesión PHP segura.
 
 ## Datos recuperados de Google
 

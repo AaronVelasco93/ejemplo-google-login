@@ -8,6 +8,7 @@ use RuntimeException;
 
 final class GoogleAuth
 {
+    /** Valida la configuración y crea el cliente OAuth que se comunica con Google. */
     public static function client(): Client
     {
         $clientId = \env_value('GOOGLE_CLIENT_ID');
@@ -21,6 +22,7 @@ final class GoogleAuth
         $client->setClientId($clientId);
         $client->setClientSecret($secret);
         $client->setRedirectUri($redirectUri);
+        // Solicita identidad, correo y perfil; el acceso online no solicita un refresh token.
         $client->setScopes(['openid', 'email', 'profile']);
         $client->setAccessType('online');
         return $client;
